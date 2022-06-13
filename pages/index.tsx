@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import 'twin.macro'
 
 const Home: NextPage = () => {
@@ -13,56 +12,58 @@ const Home: NextPage = () => {
       </Head>
 
       <main tw="container">
-        <h1 tw="text-3xl">
+        <h1 tw="text-7xl text-center my-9">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p>
+        <p tw="text-center">
           Get started by editing{' '}
           <code>pages/index.tsx</code>
         </p>
 
-        <div tw="grid">
-          <a href="https://nextjs.org/docs" tw="border-2 p-3">
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <div tw="container mt-9">
+          <div tw="grid md:grid-cols-2 gap-4">
+            <a href="https://nextjs.org/docs" tw="border-2 p-3">
+              <h2>Documentation &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
 
-          <a href="https://nextjs.org/learn" tw="border-2 p-3">
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <a href="https://nextjs.org/learn" tw="border-2 p-3">
+              <h2>Learn &rarr;</h2>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            tw="border-2 p-3"
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <a
+              href="https://github.com/vercel/next.js/tree/canary/examples"
+              tw="border-2 p-3"
+            >
+              <h2>Examples &rarr;</h2>
+              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            tw="border-2 p-3"
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <a
+              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              tw="border-2 p-3"
+            >
+              <h2>Deploy &rarr;</h2>
+              <p>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </p>
+            </a>
+          </div>
         </div>
       </main>
 
-      <footer>
+      <footer tw="text-center mt-9">
+        Composed by Sergey Pozhilov, full stack web developer
+        <br />
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://pozhilov.com"
           target="_blank"
           rel="noopener noreferrer"
+          tw="border-b-2 border-blue-400 hocus:border-red-400 hocus:text-red-600"
         >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          https://pozhilov.com
         </a>
       </footer>
     </div>
