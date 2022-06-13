@@ -1,0 +1,12 @@
+.next/
+flow-typed/
+node_modules/
+client/**/__test__/
+production-server
+*.config.js
+myTheme.js
+knexfile.ts
+jest-setup.ts
+vite-config.js
+custom.d.ts
+fakedb.js
